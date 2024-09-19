@@ -1,0 +1,6 @@
+Source/.vs/
+Source/bin/
+Source/obj/
+Source/packages/
+Source/*.user
+Gamedata/BoringCrewServices/Plugin/*.pdb

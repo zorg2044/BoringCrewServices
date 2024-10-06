@@ -1,0 +1,23 @@
+identifier: BoringCrewServices
+name: Boring Crew Services
+license: CC-BY-NC-SA-4.0
+abstract: Restockalike parts to make Boeing's Starliner spacecraft in Kerbal Space Program.
+ksp_version_min: '1.12.3'
+author:
+  - Zorg
+  - DylanSemrau
+depends:
+  - name: ModuleManager
+  - name: B9PartSwitch
+  - name: SimpleAdjustableFairings
+  - name: Waterfall
+  - name: KSPCommunityPartModules
+recommends:
+  - KSPCommunityFixes
+  - Resurfaced
+  - BluedogDB
+  - HabTech2
+suggests:
+  - TundraExploration
+supports:
+  - Benjee10-SharedAssets

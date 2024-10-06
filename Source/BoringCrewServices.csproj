@@ -34,12 +34,13 @@
     <PackageReference Include="KSPBuildTools" Version="0.0.2-alpha.4" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\ModuleCoPFollowTransform.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HOW_TO_BUILD.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Modules\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

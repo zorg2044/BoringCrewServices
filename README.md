@@ -4,12 +4,12 @@ Drag BoringCrewServices file into KSP/Gamedata
 
 Dependencies:
 
-- Module Manager
-- B9PartSwitch
-- KSPCommunityPartModules
-- Simple Adjustable Fairings
-- Waterfall
-- AnimatedDecouplers
+- Module Manager: https://forum.kerbalspaceprogram.com/topic/50533-18x-112x-module-manager-423-july-03th-2023-fireworks-season/
+- B9PartSwitch: https://github.com/blowfishpro/B9PartSwitch/releases
+- KSPCommunityPartModules: https://github.com/KSPModdingLibs/KSPCommunityPartModules/releases
+- Simple Adjustable Fairings: https://github.com/blowfishpro/SimpleAdjustableFairings/releases
+- Waterfall: https://github.com/post-kerbin-mining-corporation/Waterfall/releases
+- AnimatedDecouplers: https://github.com/Starwaster/AnimatedDecouplers/releases
 
 Recommendations:
 

@@ -4,13 +4,18 @@ Drag BoringCrewServices file into KSP/Gamedata
 
 Dependencies:
 
+- Module Manager
+- B9PartSwitch
+- KSPCommunityPartModules
 - Simple Adjustable Fairings
 - Waterfall
 - AnimatedDecouplers
 
-recommendation
+Recommendations:
 
 - Bluedog Design Bureau: For Atlas V Rocket
+- Resurfaced: PBR Texture Support
+- Habtech and Tantares: International Space Station parts
 
 NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
 

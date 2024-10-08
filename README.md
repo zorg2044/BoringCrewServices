@@ -4,8 +4,9 @@ Drag BoringCrewServices file into KSP/Gamedata
 
 Dependencies:
 
--Simple Adjustable Fairings
--Waterfall
+- Simple Adjustable Fairings
+- Waterfall
+- AnimatedDecouplers
 
 recommendation
 

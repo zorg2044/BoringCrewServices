@@ -4,4 +4,5 @@ Source/obj/
 Source/packages/
 Source/*.user
 Gamedata/BoringCrewServices/Plugin/
-.cmd
+
+*.cmd

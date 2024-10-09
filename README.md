@@ -2,6 +2,9 @@ This mod is licensed under a Creative Commons Attribution-NonCommercial-ShareAli
 Install
 Drag BoringCrewServices file into KSP/Gamedata
 
+Created by
+DylanSemrau, Zorg, SofieBrink
+
 Dependencies:
 
 - Module Manager: https://forum.kerbalspaceprogram.com/topic/50533-18x-112x-module-manager-423-july-03th-2023-fireworks-season/
@@ -17,6 +20,7 @@ Recommendations:
 - Resurfaced: PBR Texture Support
 - Habtech and Tantares: International Space Station parts
 
-NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
+Additional credits
 
-Engine sounds from KW Rocketry by Kickasskyle and Winston, licensed CC-BY-NC-SA.
+- NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
+- Engine sounds from KW Rocketry by Kickasskyle and Winston, licensed CC-BY-NC-SA.

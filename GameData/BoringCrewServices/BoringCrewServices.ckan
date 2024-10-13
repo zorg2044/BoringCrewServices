@@ -6,6 +6,7 @@ ksp_version_min: '1.12.3'
 author:
   - Zorg
   - DylanSemrau
+  - SofieBrink
 depends:
   - name: ModuleManager
   - name: B9PartSwitch

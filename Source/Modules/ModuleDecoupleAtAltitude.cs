@@ -39,8 +39,8 @@ namespace BoringCrewServices.Modules
             StopAltitudeCoroutine();
         }
 
-        [SerializeField]
-        private HeatshieldState heatshieldState = HeatshieldState.Disarmed;
+        [KSPField(isPersistant = true)]
+        public HeatshieldState heatshieldState = HeatshieldState.Disarmed;
 
         private Coroutine altitudeCoroutine;
 
@@ -77,6 +77,16 @@ namespace BoringCrewServices.Modules
             part.stagingIcon = "CUSTOM";
             part.stackIcon.iconType = DefaultIcons.CUSTOM;
             part.stackIcon.customIconFilename = "BoringCrewServices/Icons/BCS_JettisionIcon";
+            switch (heatshieldState)
+            {
+                case HeatshieldState.Armed:
+                    part.stackIcon.SetIconColor(XKCDColors.LightCyan);
+                    if (altitudeCoroutine == null) altitudeCoroutine = StartCoroutine(AltitudeDecouple());
+                    break;
+                default:
+                    part.stackIcon.SetIconColor(XKCDColors.White);
+                    break;
+            }
         }
 
         private void StopAltitudeCoroutine()

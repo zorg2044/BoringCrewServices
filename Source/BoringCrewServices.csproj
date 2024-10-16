@@ -31,16 +31,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Krafs.Publicizer">
+      <Version>1.0.3</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
     <PackageReference Include="KSPBuildTools" Version="0.0.2-alpha.4" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\ModuleBCSAirbags.cs" />
+    <Compile Include="Modules\ModuleDecoupleAtAltitude.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Publicize Include="Assembly-CSharp:KSP.UI.Screens.ProtoStageIcon.iconType" />
+    <Publicize Include="Assembly-CSharp:KSP.UI.Screens.ProtoStageIcon.customIconFilename" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HOW_TO_BUILD.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Modules\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,9 @@ Drag BoringCrewServices file into KSP/Gamedata
 Created by
 DylanSemrau, Zorg, SofieBrink
 
+Installation instructions
+- Download from the releases page. DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release. https://github.com/zorg2044/BoringCrewServices/releases
+
 Dependencies:
 
 - Module Manager: https://forum.kerbalspaceprogram.com/topic/50533-18x-112x-module-manager-423-july-03th-2023-fireworks-season/

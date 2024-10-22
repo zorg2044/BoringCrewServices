@@ -6,7 +6,8 @@ Created by
 DylanSemrau, Zorg, SofieBrink
 
 Installation instructions
-- Download from the releases page. DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release. https://github.com/zorg2044/BoringCrewServices/releases
+- Download Boring Crew Services from the releases page. DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release. https://github.com/zorg2044/BoringCrewServices/releases
+- Download and install all the dependencies listed below.
 
 Dependencies:
 

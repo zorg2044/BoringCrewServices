@@ -1,12 +1,8 @@
-This mod is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-Install
-Drag BoringCrewServices file into KSP/Gamedata
-
 # Created by
 DylanSemrau, Zorg, SofieBrink
 
 # Installation instructions
-- Download Boring Crew Services from the releases page.
+- Download Boring Crew Services from the releases page. BoringCrewServices folder goes into GameData
 ### DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release package: https://github.com/zorg2044/BoringCrewServices/releases   
 - Download and install all the dependencies listed below.
 
@@ -29,3 +25,6 @@ DylanSemrau, Zorg, SofieBrink
 
 - NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
 - Engine sounds from KW Rocketry by Kickasskyle and Winston, licensed CC-BY-NC-SA.
+
+# License
+This mod is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

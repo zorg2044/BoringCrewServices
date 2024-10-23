@@ -2,14 +2,15 @@ This mod is licensed under a Creative Commons Attribution-NonCommercial-ShareAli
 Install
 Drag BoringCrewServices file into KSP/Gamedata
 
-Created by
+# Created by
 DylanSemrau, Zorg, SofieBrink
 
-Installation instructions
-- Download Boring Crew Services from the releases page. DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release. https://github.com/zorg2044/BoringCrewServices/releases
+# Installation instructions
+- Download Boring Crew Services from the releases page.
+### DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release package: https://github.com/zorg2044/BoringCrewServices/releases   
 - Download and install all the dependencies listed below.
 
-Dependencies:
+# Dependencies:
 
 - Module Manager: https://forum.kerbalspaceprogram.com/topic/50533-18x-112x-module-manager-423-july-03th-2023-fireworks-season/
 - B9PartSwitch: https://github.com/blowfishpro/B9PartSwitch/releases
@@ -18,13 +19,13 @@ Dependencies:
 - Waterfall: https://github.com/post-kerbin-mining-corporation/Waterfall/releases
 - AnimatedDecouplers: https://github.com/Starwaster/AnimatedDecouplers/releases
 
-Recommendations:
+# Recommendations:
 
 - Bluedog Design Bureau: For Atlas V Rocket
 - Resurfaced: PBR Texture Support
 - Habtech and Tantares: International Space Station parts
 
-Additional credits
+# Additional credits
 
 - NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
 - Engine sounds from KW Rocketry by Kickasskyle and Winston, licensed CC-BY-NC-SA.

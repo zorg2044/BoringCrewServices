@@ -16,6 +16,7 @@ New Content and Features
 - Automatic deployment of appropriate airbags depending on whether the capsule is landing over dry land or water
 
 Other Enhancements
+- Physically Based Rendering (PBR) support via compatibility with Resurfaced (Deferred is recommended with it)
 - EngineIgnitor compatibility (thanks to MountainParrot)
 - VABOrganizer compatibility (thanks to EmberSkyMedia)
 - TAC Life Support compatibility (thanks to EmberSkyMedia)

@@ -19,7 +19,13 @@ recommends:
   - Resurfaced
   - BluedogDB
   - HabTech2
+  - ConformalDecals
 suggests:
   - TundraExploration
+  - VABOrganizer
 supports:
   - Benjee10-SharedAssets
+  - EngineIgniter
+  - TACLS
+  - Snacks
+  - ConnectedLivingSpace

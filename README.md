@@ -1,7 +1,7 @@
 # Installation instructions
 - Download Boring Crew Services from the releases page. BoringCrewServices folder goes into GameData
 ### DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release package: https://github.com/zorg2044/BoringCrewServices/releases   
-- Download and install all the dependencies listed below.
+- Download and install all the dependencies listed below. Note some of them may have dependencies of their own.
 
 # Dependencies:
 

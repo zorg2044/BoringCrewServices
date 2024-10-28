@@ -4,7 +4,7 @@ New Content and Features.
 - 2.75m Starliner capsule with integral air bags.
 - RS88 Launch abort engine plus vacuum optimised orbital variant.
 - Central airbag for emergency water landings.
-- 2.75m heat shield.
+- 2.75m heat shield, can be armed to auto jettison at specified altitude.
 - Drogue chutes with auto cut functionality.
 - Main chutes with animated pivot.
 - NDS docking port courtesy of Benjee10 (does not conflict with Benjee10SharedAssets).
@@ -13,7 +13,7 @@ New Content and Features.
 - Service module with built in solar panels. Center can be toggled to allow for additional tanks or custom configurations.
 - RCS thruster "doghouses" in 2 configurations.
 - Spacecraft adapter designed to interface with the Atlas V in Bluedog Design Bureau.
-- Automatic deployment of appropriate airbags depending on whether the capsule is landing over dry land or water.
+- Automatic deployment of correct airbags depending on whether the capsule is landing over dry land or water.
 
 Other Enhancements
 - Physically Based Rendering (PBR) support via compatibility with Resurfaced (Deferred is recommended with it).

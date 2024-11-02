@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace BoringCrewServices.Modules
 {
-    public class ModuleBCSAirbags : PartModule
+    public class ModuleBCSAirbags : PartModule, IMultipleDragCube
     {
         // Fields
         [KSPField]
@@ -47,9 +47,11 @@ namespace BoringCrewServices.Modules
 
         private AttachNode referenceNode;
 
-        private Animation deployAnimation;
+        [SerializeField]
+        public Animation deployAnimation;
 
-        private Animation deflateAnimation;
+        [SerializeField]
+        public Animation deflateAnimation;
 
         private string deflateAnimationNameGet => string.IsNullOrEmpty(deflateAnimationName) ? deployAnimationName : deflateAnimationName;
 
@@ -130,7 +132,6 @@ namespace BoringCrewServices.Modules
                 Events["Deflate"].active = false;
 
                 PlayAnimation(deflateAnimation, deflateAnimationNameGet, reverseDeflateAnimation ? 1 : 0, deflateAnimationEnd);
-
             }
         }
 
@@ -142,21 +143,6 @@ namespace BoringCrewServices.Modules
 
             GameEvents.onVesselSituationChange.Add(OnStatus);
 
-            if (string.IsNullOrEmpty(deployAnimationName)) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] deployAnimationName was not set!");
-            else deployAnimation = part.FindModelAnimator(deployAnimationName);
-            if (deployAnimation == null) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] Part: {part.partInfo?.name} does not have an animation named: {deployAnimationName}");
-
-            if (string.IsNullOrEmpty(deflateAnimationName)) 
-            {
-                #if DEBUG
-                Debug.Log($"[{nameof(ModuleBCSAirbags)}] deflateAnimationName was not set, using deploy animation");
-                #endif
-                deflateAnimation = deployAnimation;
-            }
-            else deflateAnimation = part.FindModelAnimator(deflateAnimationName);
-            // this will print something empty in the case that its supposed to use the deploy animation and that doesn't exist, but there will already be a correct error above.
-            if (deflateAnimation == null) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] Part: {part.partInfo?.name} does not have an animation named: {deflateAnimationName}");
-
             // possibly needs to be a KSPField if there's ever multiple anims playing simultaneously?
             deployAnimation[deployAnimationName].layer = 0;
             deflateAnimation[deflateAnimationNameGet].layer = 0;
@@ -167,9 +153,15 @@ namespace BoringCrewServices.Modules
             if (airbagState == AirbagState.Deployed)
             {
                 deployAnimation[deployAnimationName].normalizedTime = deployAnimationEnd;
+                SetDragState(1f);
             }
             else if (airbagState == AirbagState.Deflated) {
                 deflateAnimation[deflateAnimationNameGet].normalizedTime = deflateAnimationEnd;
+                SetDragState(1f);
+            }
+            else
+            {
+                SetDragState(0f);
             }
         }
 
@@ -193,6 +185,56 @@ namespace BoringCrewServices.Modules
             {
                 if ((data.to == Vessel.Situations.LANDED && autoDeflateOnLand) || (data.to == Vessel.Situations.SPLASHED && autoDeflateOnWater)) Deflate();
             }
+        }
+
+        public override void OnLoad(ConfigNode node)
+        {
+            base.OnLoad(node);
+            if (HighLogic.LoadedScene == GameScenes.LOADING) {
+                if (string.IsNullOrEmpty(deployAnimationName)) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] deployAnimationName was not set!");
+                else deployAnimation = part.FindModelAnimator(deployAnimationName);
+                if (deployAnimation == null) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] Part: {part.partInfo?.name} does not have an animation named: {deployAnimationName}");
+
+                if (string.IsNullOrEmpty(deflateAnimationName)) 
+                {
+                    #if DEBUG
+                    Debug.Log($"[{nameof(ModuleBCSAirbags)}] deflateAnimationName was not set, using deploy animation");
+                    #endif
+                    deflateAnimation = deployAnimation;
+                }
+                else deflateAnimation = part.FindModelAnimator(deflateAnimationName);
+                // this will print something empty in the case that its supposed to use the deploy animation and that doesn't exist, but there will already be a correct error above.
+                if (deflateAnimation == null) Debug.LogError($"[{nameof(ModuleBCSAirbags)}] Part: {part.partInfo?.name} does not have an animation named: {deflateAnimationName}");
+            }
+        }
+
+        public string[] GetDragCubeNames()
+        {
+            return new string[2] { "A", "B" };
+        }
+
+        public bool UsesProceduralDragCubes() => false;
+        public bool IsMultipleCubesActive => true;
+
+        public void AssumeDragCubePosition(string name)
+        {
+            if (!(name == "A"))
+            {
+                if (name == "B")
+                {
+                    deployAnimation[deployAnimationName].normalizedTime = reverseDeployAnimation ? 1 : 0;
+                }
+            }
+            else
+            {
+                deployAnimation[deployAnimationName].normalizedTime = deployAnimationEnd;
+            }
+        }
+
+        private void SetDragState(float b)
+        {
+            part.DragCubes.SetCubeWeight("A", b);
+            part.DragCubes.SetCubeWeight("B", 1f - b);
         }
 
         // Module Methods
@@ -302,6 +344,7 @@ namespace BoringCrewServices.Modules
 
             while (((isForward && anim[animationName].normalizedTime < end) || (!isForward && anim[animationName].normalizedTime > end)) && anim.isPlaying)
             {
+                if (animationName == deployAnimationName && deflateAnimationName != null) SetDragState(anim[animationName].normalizedTime);
                 yield return null;
             }
 

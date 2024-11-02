@@ -15,17 +15,17 @@ depends:
   - name: KSPCommunityPartModules
     min_version: v0.2.0
 recommends:
-  - KSPCommunityFixes
-  - Resurfaced
-  - BluedogDB
-  - HabTech2
-  - ConformalDecals
+  - name: KSPCommunityFixes
+  - name: Resurfaced
+  - name: BluedogDB
+  - name: HabTech2
+  - name: ConformalDecals
 suggests:
-  - TundraExploration
-  - VABOrganizer
+  - name: TundraExploration
+  - name: VABOrganizer
 supports:
-  - Benjee10-SharedAssets
-  - EngineIgniter
-  - TACLS
-  - Snacks
-  - ConnectedLivingSpace
+  - name: Benjee10-SharedAssets
+  - name: EngineIgniter
+  - name: TACLS
+  - name: Snacks
+  - name: ConnectedLivingSpace

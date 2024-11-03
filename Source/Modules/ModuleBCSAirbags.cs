@@ -344,7 +344,7 @@ namespace BoringCrewServices.Modules
 
             while (((isForward && anim[animationName].normalizedTime < end) || (!isForward && anim[animationName].normalizedTime > end)) && anim.isPlaying)
             {
-                if (animationName == deployAnimationName && deflateAnimationName != null) SetDragState(anim[animationName].normalizedTime);
+                if (animationName == deployAnimationName) SetDragState(anim[animationName].normalizedTime);
                 yield return null;
             }
 

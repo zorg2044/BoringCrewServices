@@ -7,6 +7,12 @@ author:
   - Zorg
   - DylanSemrau
   - SofieBrink
+install: 
+  - find: BoringCrewServices
+    install_to: GameData
+  - find: CraftFiles
+    install_to: Ships
+    as: VAB
 depends:
   - name: ModuleManager
   - name: B9PartSwitch

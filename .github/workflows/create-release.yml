@@ -13,3 +13,4 @@ jobs:
     with:
       solution-file-path: 'Source/BoringCrewServices.sln'
       version-string: ${{ inputs.version-string }}
+      artifacts: GameData CraftFiles LICENSE* README* CHANGELOG*

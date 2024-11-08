@@ -1,5 +1,5 @@
 ship = CST-100 Starliner Atlas V N22
-version = 1.12.5
+version = 1.12.3
 description = Action groups¨[1] Toggle capsule RCS¨[2] Toggle service module RCS¨[3] Toggle service module OMACS thrusters¨[Abort] Activates abort engines. Manual max throttle required.
 type = VAB
 size = 3.18099642,33.4088936,4.96749115
@@ -4270,7 +4270,7 @@ PART
 		name = ModuleB9AssignUiGroups
 		isEnabled = True
 		stagingEnabled = True
-		moduleID = 
+		moduleID =
 		EVENTS
 		{
 		}
@@ -6097,7 +6097,7 @@ PART
 		name = ModuleB9AssignUiGroups
 		isEnabled = True
 		stagingEnabled = True
-		moduleID = 
+		moduleID =
 		EVENTS
 		{
 		}
@@ -7794,7 +7794,7 @@ PART
 		name = ModuleB9AssignUiGroups
 		isEnabled = True
 		stagingEnabled = True
-		moduleID = 
+		moduleID =
 		EVENTS
 		{
 		}
@@ -8174,7 +8174,7 @@ PART
 		name = ModuleB9AssignUiGroups
 		isEnabled = True
 		stagingEnabled = True
-		moduleID = 
+		moduleID =
 		EVENTS
 		{
 		}

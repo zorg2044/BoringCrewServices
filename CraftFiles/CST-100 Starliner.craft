@@ -1,5 +1,5 @@
 ship = CST-100 Starliner
-version = 1.12.5
+version = 1.12.3
 description = Action groups¨[1] Toggle capsule RCS¨[2] Toggle service module RCS¨[3] Toggle service module OMACS thrusters¨[Abort] Activates abort engines. Manual max throttle required.
 type = VAB
 size = 3.18099618,3.78663254,3.18099594

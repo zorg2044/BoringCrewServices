@@ -1,6 +1,6 @@
 ship = CST-100 Starliner Atlas V N22
 version = 1.12.3
-description = Action groups¨[1] Toggle capsule RCS¨[2] Toggle service module RCS¨[3] Toggle service module OMACS thrusters¨[Abort] Activates abort engines. Manual max throttle required.
+description = Action groups¨[1] Toggle docking lid¨[2] Toggle service module RCS¨[3] Toggle service module OMACS thrusters¨[5] Toggle capsule RCS¨[Abort] Activates abort engines. Manual max throttle required.
 type = VAB
 size = 3.18099642,33.4088936,4.96749115
 steamPublishedFileId = 0
@@ -99,7 +99,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom01
+				actionGroup = Custom05
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -791,7 +791,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -1475,7 +1475,7 @@ PART
 		enableX = False
 		enableY = False
 		enableZ = True
-		useThrottle = False
+		useThrottle = True
 		fullThrust = False
 		stagingEnabled = False
 		EVENTS
@@ -1652,7 +1652,7 @@ PART
 		enableX = False
 		enableY = False
 		enableZ = True
-		useThrottle = False
+		useThrottle = True
 		fullThrust = False
 		stagingEnabled = False
 		EVENTS
@@ -1829,7 +1829,7 @@ PART
 		enableX = False
 		enableY = False
 		enableZ = True
-		useThrottle = False
+		useThrottle = True
 		fullThrust = False
 		stagingEnabled = False
 		EVENTS
@@ -2006,7 +2006,7 @@ PART
 		enableX = False
 		enableY = False
 		enableZ = True
-		useThrottle = False
+		useThrottle = True
 		fullThrust = False
 		stagingEnabled = False
 		EVENTS
@@ -2722,7 +2722,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Abort
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
@@ -2993,7 +2993,7 @@ PART
 			}
 			ActivateAction
 			{
-				actionGroup = None
+				actionGroup = Abort
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
@@ -3368,7 +3368,7 @@ PART
 		persistentState = STOWED
 		animTime = 0
 		minAirPressureToOpen = 0.600000024
-		deployAltitude = 1000
+		deployAltitude = 800
 		spreadAngle = 7
 		automateSafeDeploy = 0
 		stagingEnabled = True

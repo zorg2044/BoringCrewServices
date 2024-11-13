@@ -3367,7 +3367,7 @@ PART
 		persistentState = STOWED
 		animTime = 0
 		minAirPressureToOpen = 0.600000024
-		deployAltitude = 800
+		deployAltitude = 1000
 		spreadAngle = 7
 		automateSafeDeploy = 0
 		stagingEnabled = True

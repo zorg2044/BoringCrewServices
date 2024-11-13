@@ -20,6 +20,7 @@ depends:
   - name: Waterfall
   - name: KSPCommunityPartModules
     min_version: v0.2.0
+  - name: AnimatedDecouplers
 recommends:
   - name: KSPCommunityFixes
   - name: Resurfaced

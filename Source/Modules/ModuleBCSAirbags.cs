@@ -261,7 +261,7 @@ namespace BoringCrewServices.Modules
             }
         }
 
-            private void StopAltitudeCoroutine()
+        private void StopAltitudeCoroutine()
         {
             if (altitudeCoroutine != null)
             {
@@ -323,7 +323,7 @@ namespace BoringCrewServices.Modules
         // Coroutines
         public IEnumerator AltitudeCoroutine()
         {
-            yield return new WaitUntil(ShouldDeploy);
+            while (!ShouldDeploy()) yield return new WaitForFixedUpdate();
             part.stackIcon.SetIconColor(XKCDColors.Yellow);
             if (nodeCoroutine == null) nodeCoroutine = StartCoroutine(NodeCoroutine());
         }
@@ -331,7 +331,7 @@ namespace BoringCrewServices.Modules
         public IEnumerator NodeCoroutine()
         {
             StopAltitudeCoroutine();
-            yield return new WaitUntil(NodeDetached);
+            while (!NodeDetached()) yield return new WaitForFixedUpdate();
 
             bool isAboveWater = vessel.terrainAltitude <= 0;
             if ((isAboveWater && !deployAboveWater) || (!isAboveWater && !deployAboveLand)) Disarm();

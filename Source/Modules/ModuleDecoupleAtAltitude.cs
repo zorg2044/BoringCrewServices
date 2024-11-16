@@ -106,7 +106,8 @@ namespace BoringCrewServices.Modules
 
         public IEnumerator AltitudeDecouple()
         {
-            yield return new WaitUntil(ShouldJetison);
+            while (!ShouldJetison()) yield return new WaitForFixedUpdate();
+
             Decouple();
         }
     }

@@ -2,7 +2,7 @@ ship = CST-100 Starliner
 version = 1.12.3
 description = Action groups¨[1] Toggle docking lid¨[2] Toggle service module RCS¨[3] Toggle service module OMACS thrusters¨[5] Toggle capsule RCS¨[Abort] Activates abort engines. Manual max throttle required.
 type = VAB
-size = 3.18099618,3.78663254,3.18099594
+size = 3.18099618,3.98141098,3.18099618
 steamPublishedFileId = 0
 persistentId = 3589887529
 rot = 0,0,0,0
@@ -202,6 +202,22 @@ PART
 		stagingEnabled = True
 		moduleID = textureSwitchWindowPaint
 		currentSubtype = NoWindow
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
 		EVENTS
 		{
 		}
@@ -934,6 +950,22 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -1072,6 +1104,22 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleB9PartInfo
 		isEnabled = True
 		stagingEnabled = True
@@ -1120,7 +1168,7 @@ PART
 	sepI = 5
 	attm = 0
 	sameVesselCollision = False
-	modCost = 0
+	modCost = 420.000031
 	modMass = 0
 	modSize = 0,0,0
 	link = BCS.Centauri.RCSBlock_4291138788
@@ -1142,6 +1190,10 @@ PART
 	attN = RCS_node2,BCS.Centauri.RCSBlock_4291138062_1.43204618|-0.175947368|-1.1920929E-07_1.00000012|-1.19209318E-07|5.96046377E-08_1.43204618|-0.175947368|-1.1920929E-07_1.00000012|-1.19209318E-07|5.96046377E-08
 	attN = RCS_node3,BCS.Centauri.RCSBlock_4291136842_1.54757046E-07|-0.175947309|1.43204606_3.57627869E-07|-4.37114096E-08|1_1.54757046E-07|-0.175947309|1.43204606_3.57627869E-07|-4.37114096E-08|1
 	attN = RCS_node4,BCS.Centauri.RCSBlock_4291138788_-1.43204594|-0.175947249|-1.1920929E-07_-1.00000012|-2.06632109E-07|-9.53674316E-07_-1.43204594|-0.175947249|-1.1920929E-07_-1.00000012|-2.06632109E-07|-9.53674316E-07
+	attN = engineNode1_1,Null_0_0.819037616|-1.34358418|-0.473133594_0.122829437|-0.991411448|-0.0449047536_0.819037616|-1.34358418|-0.473133594_0.122829437|-0.991411448|-0.0449047536
+	attN = engineNode2_2,Null_0_0.819037735|-1.34358418|0.473132253_0.122829542|-0.991411507|0.0449044779_0.819037735|-1.34358418|0.473132253_0.122829542|-0.991411507|0.0449044779
+	attN = engineNode3_3,Null_0_-0.819037378|-1.34358418|0.473133475_-0.122829512|-0.991411448|0.0449044108_-0.819037378|-1.34358418|0.473133475_-0.122829512|-0.991411448|0.0449044108
+	attN = engineNode4_4,Null_0_-0.819037139|-1.34358418|-0.473132253_-0.122829452|-0.991411448|-0.0449046642_-0.819037139|-1.34358418|-0.473132253_-0.122829452|-0.991411448|-0.0449046642
 	EVENTS
 	{
 	}
@@ -1172,7 +1224,7 @@ PART
 		isEnabled = True
 		efficiencyMult = 1
 		launchUT = -1
-		currentRotation = (-1.06770052E-07, 0.707107186, -0.707106352, -1.68587462E-07)
+		currentRotation = (-1.62920642E-07, 1, 5.20548554E-07, -7.54979865E-08)
 		storedAnimationTime = 0
 		storedAnimationSpeed = 0
 		deployState = EXTENDED
@@ -1211,7 +1263,7 @@ PART
 		isEnabled = True
 		efficiencyMult = 1
 		launchUT = -1
-		currentRotation = (0.707107067, 0, 0, 0.707106531)
+		currentRotation = (1, 0, 0, -4.33125763E-07)
 		storedAnimationTime = 0
 		storedAnimationSpeed = 0
 		deployState = EXTENDED
@@ -1308,11 +1360,51 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleAnimatedDecoupler
+		isEnabled = True
+		animationComplete = False
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
 		moduleID = meshSwitchCenter
 		currentSubtype = Solar Panel
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = meshSwitchLength
+		currentSubtype = Standard
 		EVENTS
 		{
 		}
@@ -1357,9 +1449,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = MonoPropellant
-		amount = 350
-		maxAmount = 350
+		name = ElectricCharge
+		amount = 500
+		maxAmount = 500
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1368,9 +1460,9 @@ PART
 	}
 	RESOURCE
 	{
-		name = ElectricCharge
-		amount = 500
-		maxAmount = 500
+		name = MonoPropellant
+		amount = 350
+		maxAmount = 350
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1499,6 +1591,22 @@ PART
 		stagingEnabled = True
 		moduleID = meshSwitchLayout
 		currentSubtype = Block A
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
 		EVENTS
 		{
 		}
@@ -1688,6 +1796,22 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleWaterfallFX
 		isEnabled = True
 		stagingEnabled = True
@@ -1865,6 +1989,22 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleWaterfallFX
 		isEnabled = True
 		stagingEnabled = True
@@ -2030,6 +2170,22 @@ PART
 		stagingEnabled = True
 		moduleID = meshSwitchLayout
 		currentSubtype = Block B
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9AssignUiGroups
+		isEnabled = True
+		stagingEnabled = True
+		moduleID =
 		EVENTS
 		{
 		}
@@ -3386,21 +3542,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCoPFollowTransform
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{

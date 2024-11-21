@@ -51,6 +51,7 @@ Alternatively:
 - Central airbag that can be deployed automatically for emergency splashdown over water.
 - 2.75m Service module with animated umbilical and radial nodes for thruster packs. Also features a toggle for the central solar panel (allows for custom fuel tanks or equipment to be inserted) and an extended length variant with more propellant such as for lunar use.
 - Thruster doghouses in both layouts. Each thruster pack contains low power RCS thrusters and high power OMAC thrusters (orbital maneuvering and attitude control). RCS is used for attitude control and fine maneuvers like docking. OMACs are used for abort control authority and significant orbital maneuvers. Extra length variant available for use with extended service module.
+- Standalone decoupler in 2.75 and 2.5m variants. Based on top of Service Module model.
 - RS88 launch abort engines which also features a low thrust, high Isp orbital variant.
 - Spacecraft adapter with built in shroud. Adapts to 1.875m upper stages. Designed to match the Atlas V N22 from Bluedog Design Bureau.
 - Generic small multi adapter that adapts the 2.75m service module to 2.5m, 3.125m, 3.5m and 3.75m.

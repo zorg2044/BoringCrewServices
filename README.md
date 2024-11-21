@@ -1,7 +1,7 @@
 # Installation instructions
 - We strongly recommend installing via the CKAN mod manager for KSP. It will automatically handle all the dependencies. Set game compatibility to KSP v1.12.0 and later.
 
-## [DOWNLOAD CKAN](https://forum.kerbalspaceprogram.com/topic/197082-ckan-the-comprehensive-kerbal-archive-network-v1332-laplace-ksp-2-support/)
+### [DOWNLOAD CKAN](https://forum.kerbalspaceprogram.com/topic/197082-ckan-the-comprehensive-kerbal-archive-network-v1332-laplace-ksp-2-support/)
 
 Alternatively:
 - Download Boring Crew Services from the github releases page or spacedock. BoringCrewServices folder goes into GameData.
@@ -30,11 +30,15 @@ Alternatively:
 - DylanSemrau - Models, textures, original creator.
 - SofieBrink - Coding.
 
-
 # Additional credits
 
 - NDS Docking Port from Benjee10SharedAssets. Copyright Benedict Jewer, All Rights Reserved. Used with permission.
 - Engine sounds from KW Rocketry by Kickasskyle and Winston, licensed CC-BY-NC-SA.
+
+# Special thanks
+- CashnipLeaf - Debugging critical aero issues.
+- Rodger - Various debugging and config advice.
+- EmberSkyMedia - Contributing various compatibility configs and custom staging icons art.
 
 # Features
 - 2.75m 5 crew capacity space capsule with built in inflatable airbags that can be automatically deployed near the ground.

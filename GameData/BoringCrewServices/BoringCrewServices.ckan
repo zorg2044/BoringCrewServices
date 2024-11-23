@@ -2,7 +2,7 @@ identifier: BoringCrewServices
 name: Boring Crew Services
 license: CC-BY-NC-SA-4.0
 abstract: Restockalike parts to make Boeing's Starliner spacecraft in Kerbal Space Program.
-ksp_version_min: '1.12.3'
+$vref: '#/ckan/ksp-avc'
 author:
   - Zorg
   - DylanSemrau
@@ -25,11 +25,12 @@ recommends:
   - name: KSPCommunityFixes
   - name: Resurfaced
   - name: BluedogDB
-  - name: HabTech2
   - name: ConformalDecals
 suggests:
   - name: TundraExploration
   - name: VABOrganizer
+  - name: HabTech2
+  - name: NewTantares
 supports:
   - name: Benjee10-SharedAssets
   - name: EngineIgniter

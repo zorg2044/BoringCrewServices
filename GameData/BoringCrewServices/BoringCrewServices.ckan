@@ -21,9 +21,9 @@ depends:
   - name: KSPCommunityPartModules
     min_version: v0.3.0
   - name: AnimatedDecouplers
+  - name: Resurfaced
 recommends:
   - name: KSPCommunityFixes
-  - name: Resurfaced
   - name: BluedogDB
   - name: ConformalDecals
 suggests:

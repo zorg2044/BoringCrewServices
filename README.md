@@ -17,11 +17,11 @@ Alternatively:
 - Simple Adjustable Fairings: https://github.com/blowfishpro/SimpleAdjustableFairings/releases
 - Waterfall: https://github.com/post-kerbin-mining-corporation/Waterfall/releases
 - AnimatedDecouplers: https://github.com/Starwaster/AnimatedDecouplers/releases
+- Resurfaced: PBR Texture Support. Some texture variants and built in decal functionality is only available with resurfaced. https://github.com/Tantares/Resurfaced/releases
 
 # Recommendations:
 
 - Bluedog Design Bureau: For Atlas V Rocket https://github.com/CobaltWolf/Bluedog-Design-Bureau/releases
-- Resurfaced: PBR Texture Support. Some texture variants and built in decal functionality is only available with resurfaced. https://github.com/Tantares/Resurfaced/releases
 - Habtech: US Orbital Segment International Space Station parts https://github.com/benjee10/HabTech2/releases
 - Tantares: Russian Orbital Segment International Space Station parts https://github.com/Tantares/Tantares/releases
 

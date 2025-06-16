@@ -71,6 +71,10 @@ Alternatively:
 - Support for TAC Life Support (default configs should also work for Snacks! and Kerbalism).
 - Support for VABOrganizer.
 - Waterfall plumes for RCS and engines.
+- 5 and 7 crew IVA internals with native PBR texture support and painstakingly recreated control panel.
+- FreeIVA support including animated hatches.
+- Calypso narwhal zero G indicator (as flown to the ISS by Suni Williams) with freeIVA physics support and squeaky sound fx!
+- Although Raster Prop Monitor configs are not provided, a blank version of the instrument panel is available for users to create their own. Pull requests are appreciated for including in the mod in the future.
 
 # License
 This mod is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.

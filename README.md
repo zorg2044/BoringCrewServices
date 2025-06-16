@@ -24,6 +24,7 @@ Alternatively:
 - Bluedog Design Bureau: For Atlas V Rocket https://github.com/CobaltWolf/Bluedog-Design-Bureau/releases
 - Habtech: US Orbital Segment International Space Station parts https://github.com/benjee10/HabTech2/releases
 - Tantares: Russian Orbital Segment International Space Station parts https://github.com/Tantares/Tantares/releases
+- Free IVA: Allows free 1st person traversal of internal spaces https://github.com/FirstPersonKSP/FreeIva/releases
 
 # Created by
 - Zorg - Models, textures, current lead.

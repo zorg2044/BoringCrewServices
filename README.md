@@ -17,7 +17,7 @@ Alternatively:
 - Simple Adjustable Fairings: https://github.com/blowfishpro/SimpleAdjustableFairings/releases
 - Waterfall: https://github.com/post-kerbin-mining-corporation/Waterfall/releases
 - AnimatedDecouplers: https://github.com/Starwaster/AnimatedDecouplers/releases
-- Resurfaced: PBR Texture Support. Some texture variants and built in decal functionality is only available with resurfaced. https://github.com/Tantares/Resurfaced/releases
+- Resurfaced: PBR Texture Support. Some texture variants and built in decal functionality is only available with resurfaced. The IVA uses resurfaced materials by default and the models will not load without it. https://github.com/Tantares/Resurfaced/releases
 
 # Recommendations:
 

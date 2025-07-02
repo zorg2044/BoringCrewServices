@@ -1,0 +1,26 @@
+/Library/
+/Logs/
+/Build/
+/Temp/
+
+# Exclude Squad PartTools
+/Assets/PartTools/
+/Assets/PartTools.meta
+/Assets/SquadCore/
+/Assets/SquadCore.meta
+/Assets/Plugins/KSPAssets/
+/Assets/Plugins/KSPAssets.meta
+PartTools.cfg
+
+#Exclude TextMesh Pro
+/Assets/TextMesh Pro/
+/Assets/TextMesh Pro.meta
+
+# Exclude IPMT
+/Assets/IPMT/
+/Assets/IPMT.meta
+ipmtConfig.json
+
+# Exclude Starilex Nightstar
+/Assets/Plugins/Starilex Nightstar/
+/Assets/Plugins/Starilex Nightstar.meta

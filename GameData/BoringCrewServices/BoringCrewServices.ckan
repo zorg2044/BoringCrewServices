@@ -26,18 +26,18 @@ recommends:
   - name: KSPCommunityFixes
   - name: BluedogDB
   - name: ConformalDecals
-  - name: ASETProps
-  - name: RasterPropMonitor-Core
   - name: FreeIva
 suggests:
   - name: TundraExploration
   - name: VABOrganizer
   - name: HabTech2
   - name: NewTantares
-  - name: Reviva
+  - name: ASETProps
+  - name: RasterPropMonitor-Core
 supports:
   - name: Benjee10-SharedAssets
   - name: EngineIgniter
   - name: TACLS
   - name: Snacks
   - name: ConnectedLivingSpace
+  - name: Reviva

@@ -22,3 +22,15 @@ Other Enhancements
 - EngineIgnitor compatibility (thanks to MountainParrot).
 - VABOrganizer compatibility (thanks to EmberSkyMedia).
 - TAC Life Support compatibility (thanks to EmberSkyMedia).
+
+v1.1.0
+- Custom interior space for the BCS Starliner Capsule using Resurfaced PBR shaders that's closely inspired by the real interior. Featuring several custom details and props including cargo bags, detailed hatches, custom seats etc.
+- Highly accurate representation of the control panel.
+- 5 seat and 7 seat versions. A new 7 seat capsule part added to match.
+- Support for free movement via Free IVA mod.
+- Animated hatches for Free IVA.
+- Calypso narwhal zero G indicator plushie prop with sparkly textures. (as taken to the ISS in real life by NASA astronaut Suni Williams). The prop is interactive and makes squeaky sounds in Free IVA.
+
+v1.2.0
+- Interactive IVA option via Raster Prop Monitor compatibility. ASET props is also required with RPM and Reviva is highly reccomended if using this.
+- Fix TAC Life support config.

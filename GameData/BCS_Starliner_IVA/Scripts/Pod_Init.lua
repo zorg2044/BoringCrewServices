@@ -1,0 +1,21 @@
+function MAS_BCS_PodInit()
+
+  fc.SetRCSThrustLimit(0)
+  fc.SetResourceLock("LiquidFuel", true)
+  fc.SetResourceLock("Oxidizer", true)
+  fc.SetPersistent("Global_AscentScratchPad", "")
+  fc.SetPersistent("Global_DockCamGain", 1)
+  fc.SetPersistent("Global_MFDULCameraGain", 1)
+  fc.SetPersistent("Global_MFDULAftCameraGain", 1)
+  fc.SetPersistent("Global_AnnunciatorVolume", 1)
+  fc.SetPersistent("Global_AnnunciatorToggle", 1)
+  fc.SetPersistent("Global_MFDLLSelectedScienceTypeIdIndex", 0)
+  fc.SetPersistent("Global_KACSelectedAlarm", 0)
+  fc.TrackResourceConverter(1, "LiquidFuel")
+  fc.TrackResourceConverter(2, "Oxidizer")
+  fc.TrackResourceConverter(3, "MonoPropellant")
+  fc.TrackResourceConverter(4, "Oxygen")
+  fc.TrackResourceConverter(5, "Water")
+  fc.TrackResourceConverter(6, "Ore")
+
+end
